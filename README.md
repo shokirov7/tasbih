@@ -1,2 +1,2 @@
 # tasbih
-# Link: https://shokirov7.github.io/tasbih/
+# Link: https://tasbih-dhikr.netlify.app/
