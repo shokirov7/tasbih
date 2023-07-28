@@ -65,13 +65,13 @@
   transition: all 0.2s;
 }
 .add_btn:active,
-.decrease_btn:active{
+.decrease_btn:active {
   border: 6px solid #00ea86;
   background-color: #007543;
 }
-.decrease_btn{
-    align-items: baseline;
-    padding-top: 5%;
+.decrease_btn {
+  align-items: baseline;
+  padding-top: 5%;
 }
 .add_btn {
   width: 240px;
@@ -104,6 +104,19 @@
   height: 35px;
   transform: rotate(135deg);
 }
-.creator{
+.creator {
   color: rgb(102, 102, 102);
+}
+
+@media (max-width: 500px) {
+  .container {
+    position: relative;
+  }
+  .tasbih {
+    gap: 0;
+  }
+  .creator {
+    position: absolute;
+    bottom: 10px;
+  }
 }
