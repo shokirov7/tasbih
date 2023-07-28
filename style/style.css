@@ -82,6 +82,8 @@
   transform: rotate(-45deg);
   border-top: 6px solid #00ea86;
   border-right: 6px solid #00ea86;
+  border-left: none;
+  border-bottom: none;
   background-color: transparent;
 }
 .add_btn_arrow {
