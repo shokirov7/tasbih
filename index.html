@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./odometer-theme-default.css">
+    <title>Tasbih - Online Dhikr Counter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tasbih">
+            <div class="top_row">
+                <select name="" id="">
+                    <option value="100">+100</option>
+                    <option value="50">+50</option>
+                    <option value="30">+30</option>
+                    <option value="15">+15</option>
+                    <option value="10">+10</option>
+                    <option value="9">+9</option>
+                    <option value="8">+8</option>
+                    <option value="7">+7</option>
+                    <option value="6">+6</option>
+                    <option value="5">+5</option>
+                    <option value="4">+4</option>
+                    <option value="3">+3</option>
+                    <option value="2">+2</option>
+                    <option selected value="1">+1</option>
+                </select>
+                <button onclick="reset()">Reset</button>
+            </div>
+            <div class="value" id="value">0</div>
+            <div class="add_btn" onclick="increase()">
+                <div class="add_btn_arrow"></div>
+            </div>
+            <div class="decrease_btn" onclick="decrease()">
+                <div class="dec_btn_arrow"></div>
+            </div>
+            <div class="creator">
+                Made By Amirxon
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+    <script src="./odometer.js"></script>
+
+
+    <script>
+        var counterValue = 0;
+        var el = document.querySelector('.value');
+        let od = new Odometer({
+            el: el,
+            auto: false,
+            duration: 100,
+        });
+
+        function updateCounter() {
+            el.innerHTML = counterValue
+        }
+        function increase() {
+            counterValue += parseInt(document.querySelector('select').value);
+            updateCounter();
+        }
+        function decrease() {
+            if (counterValue >= parseInt(document.querySelector('select').value)) {
+                counterValue -= parseInt(document.querySelector('select').value);
+            } else {
+                counterValue = 0;
+            }
+            updateCounter();
+        }
+        function reset() {
+            counterValue = 0
+            updateCounter()
+        }
+
+
+        window.addEventListener('DOMContentLoaded', function () {
+            updateCounter();
+        });
+    </script>
+
+</body>
+
+</html>
