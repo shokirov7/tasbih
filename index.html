@@ -35,11 +35,13 @@
                 <button onclick="reset()">Reset</button>
             </div>
             <div class="value" id="value">0</div>
-            <div class="add_btn" onclick="increase()">
-                <button class="add_btn_arrow"></button>
-            </div>
-            <div class="decrease_btn" onclick="decrease()">
-                <button class="dec_btn_arrow"></button>
+            <div class="btns">
+                <div class="add_btn" onclick="increase()">
+                    <button class="add_btn_arrow"></button>
+                </div>
+                <div class="decrease_btn" onclick="decrease()">
+                    <button class="dec_btn_arrow"></button>
+                </div>
             </div>
             <div class="creator">
                 Made By Amirxon
@@ -76,8 +78,11 @@
             updateCounter();
         }
         function reset() {
-            counterValue = 0
-            updateCounter()
+            var confirmed = confirm('Вы уверены, что хотите сбросить счетчик?');
+            if (confirmed) {
+                counterValue = 0;
+                updateCounter();
+            }
         }
 
 

@@ -48,8 +48,12 @@
 }
 .value {
   color: #fff;
-  font-weight: 500;
   font-size: 9rem;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .add_btn,
 .decrease_btn {
@@ -115,11 +119,15 @@
   .container {
     position: relative;
   }
-  .tasbih {
-    gap: 0;
-  }
   .creator {
     position: absolute;
     bottom: 10px;
+    user-select: none;
+  }
+  .value{
+    font-size: 7rem;
+  }
+  .top_row{
+    gap: 30px;
   }
 }
