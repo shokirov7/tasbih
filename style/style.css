@@ -119,6 +119,9 @@
   .container {
     position: relative;
   }
+  .btns{
+    margin-top: -5px;
+  }
   .creator {
     position: absolute;
     bottom: 10px;
