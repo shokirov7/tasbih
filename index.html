@@ -55,6 +55,17 @@
 
     <script>
         var counterValue = 0;
+
+        let savevalue = () => {
+            localStorage.setItem('counterValue', counterValue.toString())
+        }
+        let loadvalue = () => {
+            const loadedvalue = localStorage.getItem('counterValue')
+            if( loadedvalue !== null) {
+                counterValue = parseInt(loadedvalue)
+            }
+        }
+
         var el = document.querySelector('.value');
         let od = new Odometer({
             el: el,
@@ -64,6 +75,7 @@
 
         function updateCounter() {
             el.innerHTML = counterValue
+            savevalue()
         }
         function increase() {
             counterValue += parseInt(document.querySelector('select').value);
@@ -87,6 +99,7 @@
 
 
         window.addEventListener('DOMContentLoaded', function () {
+            loadvalue()
             updateCounter();
         });
     </script>
