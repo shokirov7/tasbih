@@ -118,9 +118,6 @@
   .container {
     position: relative;
   }
-  .top_row{
-    margin-bottom: -13px;
-  }
   .btns{
     margin-top: -5px;
   }
@@ -130,11 +127,12 @@
     user-select: none;
   }
   .value{
-    font-size: 5.5rem;
-    height: 90px;
+    font-size: 6rem;
+    height: 95px;
     overflow: hidden;
+    border: 1px solid white;
   }
   .top_row{
-    gap: 30px;
+    gap: 35px;
   }
 }
