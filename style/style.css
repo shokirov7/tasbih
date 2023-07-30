@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.2s;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
   -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
   outline: none !important;
@@ -69,7 +68,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .add_btn:active,
 .decrease_btn:active {
@@ -119,6 +118,9 @@
   .container {
     position: relative;
   }
+  .top_row{
+    margin-bottom: -13px;
+  }
   .btns{
     margin-top: -5px;
   }
@@ -128,7 +130,9 @@
     user-select: none;
   }
   .value{
-    font-size: 7rem;
+    font-size: 5.5rem;
+    height: 90px;
+    overflow: hidden;
   }
   .top_row{
     gap: 30px;
