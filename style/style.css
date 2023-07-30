@@ -84,7 +84,7 @@
   height: 240px;
 }
 .decrease_btn {
-  margin-top: -4rem;
+  margin-top: -3.5rem;
   width: 90px;
   height: 90px;
 }
@@ -112,6 +112,9 @@
 }
 .creator {
   color: rgb(102, 102, 102);
+}
+.creator span{
+  color: #00ea86;
 }
 
 @media (max-width: 500px) {
