@@ -130,7 +130,7 @@
     font-size: 6rem;
     height: 95px;
     overflow: hidden;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
   .top_row{
     gap: 35px;
