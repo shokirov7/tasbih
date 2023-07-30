@@ -47,7 +47,10 @@
 }
 .value {
   color: #fff;
-  font-size: 9rem;
+  height: 107px;
+  overflow: hidden;
+  font-size: 7rem;
+  /* border: 1px solid white; */
 }
 .btns{
   display: flex;
@@ -114,7 +117,7 @@
   color: rgb(102, 102, 102);
 }
 .creator span{
-  color: #00ea86;
+  color: #00ea86 !important;
 }
 
 @media (max-width: 500px) {
